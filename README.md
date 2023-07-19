@@ -70,7 +70,8 @@
     (e.g., http://127.0.0.1:8000/intrigation).
 -   Use the following code to authenticate and authorize the API
 
-`&lt;?php
+```
+&lt;?php
 
 require\_once \_\_DIR\_\_ . '/vendor/autoload.php';
 
@@ -100,7 +101,8 @@ if (!isset(\$\_GET\['code'\]))
 
  // Save \$accessToken for future use
 
-}`
+}
+```
 
 Note: Replace 'path\_to\_credentials\_file.json' with the actual path to
 your credentials file.
