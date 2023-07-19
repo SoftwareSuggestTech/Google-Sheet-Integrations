@@ -8,20 +8,41 @@
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/1.png)
 
 -   After Create Project ENABLE APIS AND SERVICES
+-   
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/2.png)
 -   ENABLE APIS AND SERVICES Click And Select Google Sheet API Enable
+
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/3.png)
--   After Enable Google Sheet API Create Credentials
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/4.png)
--   Add Or Remove Scope
+
+-   After Enable Google Sheet API Create Credentials
+
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/5.png)
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/6.png)
+
+
+-    Add Or Remove Scope
+    
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/7.png)
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/8.png)
+
 
 -   After Save And Continue
 
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/9.png)
+
 -   After Click Create Credential
+  
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/10.png)
 
 -   Select Application Type
+  
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/11.png)
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/12.png)
 
 -   Download Cedentials json File
+
+![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/13.png)
 
 **2. Create spreadsheet**
 
