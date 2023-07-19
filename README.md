@@ -1,6 +1,6 @@
 **Google Sheet Integration For PHP\
 \
- 1.Set up a project in the Google Cloud Platform Console:**
+ 1.Set Up A Project In The Google Cloud Platform Console:**
 
 -   ***Go to the Google Cloud Platform Console
     (***[***https://console.cloud.google.com/***](https://console.cloud.google.com/)***)***
@@ -44,7 +44,7 @@
 
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/13.png)
 
-**2. Create spreadsheet**
+**2. Create Spreadsheet**
 
 -   Create a new spreadsheet in [Google
     Drive](https://drive.google.com/)
@@ -56,14 +56,14 @@
 
 ****
 
- **3. Install the Google Client Library for PHP**
+ **3. Install The Google Client Library For PHP**
 
 -   *Y*ou can install the library using Composer, a popular PHP
     package manager. Run the following command in your project director
 -   composer require google/apiclient:\^2.0 -->Run this command Your
     Project
 
- **4. Authenticate with Google Sheets API using OAuth 2.0:**
+ **4. Authenticate With Google Sheets API Using OAuth 2.0:**
 
 -   Load the JSON credentials file you downloaded in step 1.
 -    Set up a redirect URI for your OAuth 2.0 credentials
@@ -95,7 +95,7 @@ Note: Replace 'path\_to\_credentials\_file.json' with the actual path to
 your credentials file.
 ?>
 ```
-**5.Google Sheets data Fetch(Get):**
+**5.Google Sheets Data Fetch(Get):**
 
 -   Once you have obtained the access token, you can use it to make
     requests to the Google Sheets API.
@@ -129,7 +129,7 @@ your credentials file.
  }
 ```
 
-**6. Google Sheets data Append (Insert):**
+**6. Google Sheets Data Append (Insert):**
 
 ```
 $client = new Google_Client();
@@ -159,7 +159,7 @@ $range = 'Sheet1';
    }
 ```
 
-**7. Google Sheets data Update (Edit):**
+**7. Google Sheets Data Update (Edit):**
 
 ```
 $client = new Google_Client();
