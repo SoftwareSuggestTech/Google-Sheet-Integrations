@@ -132,7 +132,6 @@ your credentials file.
 **6. Google Sheets data Append (Insert):**
 
 ```
-$client = new Google\_Client();
 $client = new Google_Client();
 $client->setAuthConfig('path_to_credentials_file.json');
 $client->addScope(Google_Service_Sheets::SPREADSHEETS);
