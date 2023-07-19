@@ -5,9 +5,11 @@
 -   ***Go to the Google Cloud Platform Console
     (***[***https://console.cloud.google.com/***](https://console.cloud.google.com/)***)***
 -   Create a new project or select an existing one.
+  
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/1.png)
 
--   After Create Project ENABLE APIS AND SERVICES     
+-   After Create Project ENABLE APIS AND SERVICES
+       
 ![alt text](https://google-sheet-integrations.s3.us-east-2.amazonaws.com/Google+Sheet+API+Intrigation/2.png)
 
 -   ENABLE APIS AND SERVICES Click And Select Google Sheet API Enable
