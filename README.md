@@ -1,336 +1,250 @@
-`	`**Google Sheet Integration For PHP
+**Google Sheet Integration For PHP\
+\
+ 1.Set up a project in the Google Cloud Platform Console:**
 
-` `1.Set up a project in the Google Cloud Platform Console:**
+-   ***Go to the Google Cloud Platform Console
+    (***[***https://console.cloud.google.com/***](https://console.cloud.google.com/)***)***
+-   Create a new project or select an existing one.
 
-- ***Go to the Google Cloud Platform Console (<https://console.cloud.google.com/>)***
-- ***Create a new project or select an existing one.![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.001.png)***
+-   After Create Project ENABLE APIS AND SERVICES
 
-- ***After Create Project  ENABLE APIS AND SERVICES***
+-   ENABLE APIS AND SERVICES Click And Select Google Sheet API Enable
 
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.002.png)**	
-**
+-   After Enable Google Sheet API Create Credentials
 
+-   Add Or Remove Scope
 
+-   After Save And Continue
 
-- ***ENABLE APIS AND SERVICES Click And Select Google Sheet API Enable***
+-   After Click Create Credential
 
+-   Select Application Type
 
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.003.png)![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.004.png)	
-
-- ***After Enable Google Sheet API Create Credentials***
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.005.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.006.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- ***Add Or Remove Scope***
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.007.png)
-
-
-
-- ![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.008.png)***After Save And Continue***
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.009.png)
-
-- ***After Click Create Credential***
-
-`        `![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.010.png)
-
-- ***Select Application Type***
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.011.png)
-
-
-
-![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.012.png)
-
-
-
-
-
-
-
-
-
-- ***Download Cedentials json File***
-
-`	`![](Aspose.Words.765a33ed-9d30-4edb-931b-675df95ecc94.013.png)	
-
-
-
-
+-   Download Cedentials json File
 
 **2. Create spreadsheet**
 
-- Create a new spreadsheet in [*Google Drive*](https://drive.google.com/)
-- Save the file ID from address bar.
-- For e.g : [*https://docs.google.com/spreadsheets/d/](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)[1omK33*](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*[/edit#gid=0](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)
-- your\_spreadsheet\_id : [*1omK33*](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+-   Create a new spreadsheet in [Google
+    Drive](https://drive.google.com/)
+-   Save the ****file ID ****from address bar.
+-   For e.g :
+    [https://docs.google.com/spreadsheets/d/](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)[1omK33](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*[/edit\#gid=0](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)
+-   your\_spreadsheet\_id :
+    [1omK33](https://docs.google.com/spreadsheets/d/1omK338NT3DQQvaWPNSnqEZJ1yNep0jmruc5e012w7/edit#gid=0)\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-***	
+****
 
-` `**3.Install the Google Client Library for PHP**
+** 3.Install the Google Client Library for PHP**
 
-- *Y*ou can install the library using Composer, a popular PHP package manager. Run the following command in your project director
-- composer require google/apiclient:^2.0 -->Run this command Your Project
+-   *Y*ou can install the library using Composer, a popular PHP
+    package manager. Run the following command in your project director
+-   composer require google/apiclient:\^2.0 --&gt;Run this command Your
+    Project
 
+ **4.Authenticate with Google Sheets API using OAuth 2.0:**
 
-` `**4.Authenticate with Google Sheets API using OAuth 2.0:**
+-   Load the JSON credentials file you downloaded in step 1.
+-    Set up a redirect URI for your OAuth 2.0 credentials
+    (e.g., http://127.0.0.1:8000/intrigation).
+-   Use the following code to authenticate and authorize the API
 
-- Load the JSON credentials file you downloaded in step 1.
-- ` `Set up a redirect URI for your OAuth 2.0 credentials (e.g., http://127.0.0.1:8000/intrigation).
-- Use the following code to authenticate and authorize the API
+&lt;?php
 
-`	`<?php
+require\_once \_\_DIR\_\_ . '/vendor/autoload.php';
 
-`	`require\_once \_\_DIR\_\_ . '/vendor/autoload.php';
+\$client = new Google\_Client();
 
-`	`$client = new Google\_Client();
+\$client-&gt;setAuthConfig('path\_to\_credentials\_file.json');
 
-`	`$client->setAuthConfig('path\_to\_credentials\_file.json');
+\$client-&gt;addScope(Google\_Service\_Sheets::SPREADSHEETS);
 
-`	`$client->addScope(Google\_Service\_Sheets::SPREADSHEETS);
+\$client-&gt;setRedirectUri('http://127.0.0.1:8000/intrigation');
 
-`	`$client->setRedirectUri('http://127.0.0.1:8000/intrigation');
+if (!isset(\$\_GET\['code'\]))
 
-`	`if (!isset($\_GET['code']))
+ {
 
-`          `{
+ \$authUrl = \$client-&gt;createAuthUrl();
 
-`   		 `$authUrl = $client->createAuthUrl();
+ header('Location: ' . \$authUrl);
 
-`   		 `header('Location: ' . $authUrl);
+ exit;
 
-`   		 `exit;
+} else {
 
-`	`} else {
+ \$client-&gt;fetchAccessTokenWithAuthCode(\$\_GET\['code'\]);
 
-` 		  `$client->fetchAccessTokenWithAuthCode($\_GET['code']);
+ \$accessToken = \$client-&gt;getAccessToken();
 
-`    		`$accessToken = $client->getAccessToken();
+ // Save \$accessToken for future use
 
-`   		 `// Save $accessToken for future use
+}
 
-`	`}
-
-
-
-
-
-***Note: Replace 'path\_to\_credentials\_file.json' with the actual path to your credentials file.***
-
-
+Note: Replace 'path\_to\_credentials\_file.json' with the actual path to
+your credentials file.
 
 **5. Google Sheets data Fetch(Get):**
 
-- Once you have obtained the access token, you can use it to make requests to the Google Sheets API.
-- Here's an example of reading data from a spreadsheet
+-   Once you have obtained the access token, you can use it to make
+    requests to the Google Sheets API.
+-   Here's an example of reading data from a spreadsheet
 
-`      `<?php
+ &lt;?php
 
-`	`require\_once \_\_DIR\_\_ . '/vendor/autoload.php';
+require\_once \_\_DIR\_\_ . '/vendor/autoload.php';
 
-`	`$client = new Google\_Client();
+\$client = new Google\_Client();
 
-`	`$client->setAuthConfig('path\_to\_credentials\_file.json');
+\$client-&gt;setAuthConfig('path\_to\_credentials\_file.json');
 
-`	`$client->addScope(Google\_Service\_Sheets::SPREADSHEETS);
+\$client-&gt;addScope(Google\_Service\_Sheets::SPREADSHEETS);
 
-`	`$client->setAccessToken($accessToken);
+\$client-&gt;setAccessToken(\$accessToken);
 
-`	`$service = new Google\_Service\_Sheets($client);
+\$service = new Google\_Service\_Sheets(\$client);
 
-`	`$spreadsheetId = 'your\_spreadsheet\_id';
+\$spreadsheetId = 'your\_spreadsheet\_id';
 
-`	`$range = 'Sheet1';
+\$range = 'Sheet1';
 
-`	`$response = $service->spreadsheets\_values->get($spreadsheetId, $range);
+\$response = \$service-&gt;spreadsheets\_values-&gt;get(\$spreadsheetId,
+\$range);
 
-`	`$values = $response->getValues();
+\$values = \$response-&gt;getValues();
 
-`	`if (empty($values))
+if (empty(\$values))
 
-`	`{
+{
 
-`    		`echo 'No data found.';
+ echo 'No data found.';
 
-`	`}
+}
 
-`	`else
+else
 
-`	`{
+{
 
-`    		`foreach ($values as $row)
+ foreach (\$values as \$row)
 
-`		`{
+{
 
-`			`foreach ($row as $cell)
+foreach (\$row as \$cell)
 
-`			`{
+{
 
-`          				`echo $cell . "\t";
+ echo \$cell . "\\t";
 
-`      			  `}
+ }
 
-`       				 `echo "<br>";
+ echo "&lt;br&gt;";
 
-`    		`}
+ }
 
-`	`}
-
-
-
-** 
+}
 
 **6. Google Sheets data Append (Insert):**
-**
-`	`$client = new Google\_Client();
 
-`	`$client->setAuthConfig('path\_to\_credentials\_file.json');
+****\$client = new Google\_Client();
 
-`	`$client->addScope(Google\_Service\_Sheets::SPREADSHEETS);
+\$client-&gt;setAuthConfig('path\_to\_credentials\_file.json');
 
-`	`$client->setAccessToken($accessToken);
-**
-` 	 `$service = new Google\_Service\_Sheets($client);
+\$client-&gt;addScope(Google\_Service\_Sheets::SPREADSHEETS);
 
-`            `$spreadsheetId = 'your\_spreadsheet\_id';
+\$client-&gt;setAccessToken(\$accessToken);
 
-`            `$range = 'Sheet1';
+** ** \$service = new Google\_Service\_Sheets(\$client);
 
-`        	 `$updateBody = new Google\_Service\_Sheets\_ValueRange([
+ \$spreadsheetId = 'your\_spreadsheet\_id';
 
-`            	`'range' => 'Sheet1',
+ \$range = 'Sheet1';
 
-`            	`'majorDimension' => 'COLUMNS',
+ \$updateBody = new Google\_Service\_Sheets\_ValueRange(\[
 
-`            	`'values' => [
+ 'range' =&gt; 'Sheet1',
 
-`           			 `['test2'],['testing\_new2'],['testinf@gmail.com2']
+ 'majorDimension' =&gt; 'COLUMNS',
 
-`            		        `]
+ 'values' =&gt; \[
 
-`        `]);
+ \['test2'\],\['testing\_new2'\],\['testinf@gmail.com2'\]
 
-`        `$result = $service->spreadsheets\_values->append($spreadsheetId,$range,$updateBody,
+ \]
 
-`            	`['valueInputOption' => "RAW"]
+ \]);
 
-`        `);
+ \$result =
+\$service-&gt;spreadsheets\_values-&gt;append(\$spreadsheetId,\$range,\$updateBody,
 
-`        `if(isset($result['spreadsheetId']))
+ \['valueInputOption' =&gt; "RAW"\]
 
-`        `{
+ );
 
-`            `echo "success";
+ if(isset(\$result\['spreadsheetId'\]))
 
-`        `}
+ {
 
-`        `else
+ echo "success";
 
-`        `{
+ }
 
-`            `echo "failure";
+ else
 
-`        `}
+ {
 
+ echo "failure";
 
+ }
 
 **7. Google Sheets data Update (Edit):**
-**
-`       `$client = new Google\_Client();
 
-`        `$client->setAuthConfig('path\_to\_credentials\_file.json');
+** **\$client = new Google\_Client();
 
-`        `$client->addScope(Google\_Service\_Sheets::SPREADSHEETS);
+ \$client-&gt;setAuthConfig('path\_to\_credentials\_file.json');
 
-`        `$client->setAccessToken($accessToken);
-**
-`       `$service = new Google\_Service\_Sheets($client);
+ \$client-&gt;addScope(Google\_Service\_Sheets::SPREADSHEETS);
 
-`        `$spreadsheetId = 'your\_spreadsheet\_id';
+ \$client-&gt;setAccessToken(\$accessToken);
 
-`        `$range = 'Sheet1';
+** **\$service = new Google\_Service\_Sheets(\$client);
 
-`        `$values = [
+ \$spreadsheetId = 'your\_spreadsheet\_id';
 
-`            `['testing first name ', 'testing last name','newtesting@gmail.com'],
+ \$range = 'Sheet1';
 
-`        `];
+ \$values = \[
 
-`        `$body = new \Google\_Service\_Sheets\_ValueRange([
+ \['testing first name ', 'testing last name','newtesting@gmail.com'\],
 
-`            `'values' => $values
+ \];
 
-`        `]);
+ \$body = new \\Google\_Service\_Sheets\_ValueRange(\[
 
-`        `$params = [
+ 'values' =&gt; \$values
 
-`            `'valueInputOption' => 'RAW'
+ \]);
 
-`        `];
+ \$params = \[
 
-`        `$result = $service->spreadsheets\_values->update($spreadsheetId, $range, $body, $params);
+ 'valueInputOption' =&gt; 'RAW'
 
-`        `if(isset($result['spreadsheetId']))
+ \];
 
-`        `{
+ \$result =
+\$service-&gt;spreadsheets\_values-&gt;update(\$spreadsheetId, \$range,
+\$body, \$params);
 
-`            `echo "success";
+ if(isset(\$result\['spreadsheetId'\]))
 
-`        `}
+ {
 
-`        `else
+ echo "success";
 
-`        `{
+ }
 
-`            `echo "failure";
+ else
 
-`        `}
+ {
+
+ echo "failure";
+
+ }
