@@ -113,6 +113,7 @@ your credentials file.
     requests to the Google Sheets API.
 -   Here's an example of reading data from a spreadsheet
 
+ ```
  &lt;?php
 
 require\_once \_\_DIR\_\_ . '/vendor/autoload.php';
@@ -165,9 +166,11 @@ foreach (\$row as \$cell)
  }
 
 }
+```
 
 **6. Google Sheets data Append (Insert):**
 
+```
 ****\$client = new Google\_Client();
 
 \$client-&gt;setAuthConfig('path\_to\_credentials\_file.json');
@@ -218,9 +221,11 @@ foreach (\$row as \$cell)
  echo "failure";
 
  }
+```
 
 **7. Google Sheets data Update (Edit):**
 
+```
 ** **\$client = new Google\_Client();
 
  \$client-&gt;setAuthConfig('path\_to\_credentials\_file.json');
@@ -272,3 +277,4 @@ foreach (\$row as \$cell)
  echo "failure";
 
  }
+```
