@@ -97,7 +97,7 @@ Note: Replace 'path\_to\_credentials\_file.json' with the actual path to
 your credentials file.
 ?>
 ```
-**5.Google Sheets Data Fetch(Get):**
+**5.Google Sheets Data Fetch:**
 
 -   Once you have obtained the access token, you can use it to make
     requests to the Google Sheets API.
